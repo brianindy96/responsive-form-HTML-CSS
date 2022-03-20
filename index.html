@@ -9,28 +9,63 @@
 </head>
 <body>
     <div class="container">
-        <form action="#">
+        <div>
             <h3>Registeration Form</h3>
+        </div>
+        <form action="GET">
                 <div class="input-container">
                     <!-- Full name -->
-                    <label for="name">Full Name</label>
-                    <input type="text" placeholder="Enter your full name" name="name" id="name">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="Enter your full name" name="name" id="name" required>
+                    </div>
                     <!-- Email -->
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Enter your email address" name="email" id="email">
+                    <div>
+                        <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email address" name="email" id="email" required>
+                    </div>
                     <!-- Username -->
-                    <label for="user-name">Username</label>
-                    <input type="text" placeholder="Enter your username" name="user-name" id="user-name">
+                    <div>
+                        <label for="user-name">Username</label>
+                        <input type="text" placeholder="Enter your username" name="user-name" id="user-name" required>
+                    </div>
                     <!-- Phone number -->
-                    <label for="tele">Phone Number</label>
-                    <input type="text" placeholder="Enter your phone number" name="tele" id="tele">
+                    <div>
+                        <label for="tele">Phone Number</label>
+                        <input type="text" placeholder="Enter your phone number" name="tele" id="tele" required>
+                    </div>
                     <!-- Password -->
-                    <label for="pwd">Password</label>
-                    <input type="password" placeholder="Enter your password" name="pwd" id="pwd">
+                    <div>
+                        <label for="pwd">Password</label>
+                        <input type="password" placeholder="Enter your password" name="pwd" id="pwd" required>
+                    </div>
                     <!-- Password Confirm -->
-                    <label for="pwd">Confirm Password</label>
-                    <input type="password" placeholder="Confirm your password" name="pwd" id="pwd">
+                    <div>
+                        <label for="pwd">Confirm Password</label>
+                        <input type="password" placeholder="Confirm your password" name="pwd" id="pwd" required>
+                    </div>
                 </div>
+                <!-- Radio buttons -->
+                <div class="confirmation">
+                    <h3>Are you sexually active?</h3>
+                    <div class="radio-buttons">
+                        <div>
+                            <label for="yes">Yes</label>
+                            <input type="radio">
+                        </div>
+                        <div>
+                            <label for="no">No</label>
+                            <input type="radio">
+                        </div>
+                        <div>
+                            <label for="yes">My name's Jeff</label>
+                            <input type="radio">
+                        </div>
+                    </div>
+                </div>
+                
+                <input type="submit" value ="Submit" name="submit" id="submit">
+
         </form>
     </div>
 </body>
