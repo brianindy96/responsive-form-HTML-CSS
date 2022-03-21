@@ -1,6 +1,13 @@
+:root{
+    --pink: #e99ba6;
+    --dark-pink: #ffd9de;
+}   
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -8,16 +15,58 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(var(--pink),var(--dark-pink));
 }
 
 .container{
-    height: 500px;
-    width: 50vw;
+    background-color: white;
+    max-width: 700px;
+    width: 100%;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 9px;
+    position: relative;
 }
 
-.input-container{
-  
+.title-form{
+    font-size: 30px;
+    margin-bottom: 10px;
 }
+
+.container form .input-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Creating invisible borders in between */
+form .input-container .input-box{
+    width: calc(100% / 2 - 20px);
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px;
+}
+
+form .input-container .input-box input{
+    margin-top: 20px;
+    padding: 5px;
+}   
+
+form .input-container .input-box label{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.radio-buttons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#submit{
+    padding: 5px;
+    width: 100px;
+}
+
