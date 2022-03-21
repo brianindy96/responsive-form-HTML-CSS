@@ -4,9 +4,9 @@ Description: After finishing topics on Form Basics and Validations with HTML on 
 
 Reflections:
 
-1. 
+1. The form is responsive to a certain point. 
 
-2.
+2. Should be able to create forms for default websites that ask for email, passwords, and to accept conditions. 
 
-3.
+3. Learned the difference between "GET" and "POST"
  
